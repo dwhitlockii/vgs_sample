@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decrypt</title>
+</head>
+<body>
+
+<form class="form-horizontal2 boxed" method="post" action="/forward">
+    <!--CREDIT CARD PAYMENT-->
+    <div class="panel panel-info">
+        <div class="form-group">
+            <div class="col-md-12">
+                <label for="pan_number" id="pan_number_label">Credit Card Number</label>
+                <input class="form-control" placeholder="Card Number" type="text" name="cc_number" id="pan_number" value={{message['json']['cc_number']}}>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="pan_exp" id="pan_exp_label">CC Expiration</label>
+            <input class="form-control" placeholder="Card Expiration" type="text" name="cc_exp" id="pan_exp" value={{message['json']['cc_exp']}}>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="pan_cvv" id="pan_cvv_label">CC CVV</label>
+        <input class="form-control" placeholder="CVV" type="text" name="cc_cvv" id="pan_cvv" value={{message['json']['cc_cvv']}}>
+    </div>
+
+    <button type="submit">Decrypt Data</button>
+</form>
+
+
+</body>
+</html>
+
+
+
+
+
